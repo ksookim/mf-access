@@ -43,20 +43,16 @@ and open the template in the editor.
         <a href="http://localhost:9876/1.0/MovingFeatures(mf0001)?$select=timeAtPoint(POINT(116.4%2039.8))">timeAtPoint with ID</a>
         <pre>
         {
-            "timeAtPoint" : {
-            "dateTimes" : [ "2008-02-07T13:00:37Z", "2008-02-07T13:00:51Z", "2008-02-08T13:35:57Z", "2008-02-08T13:36:06Z", "2008-02-06T13:08:32Z", "2008-02-06T13:08:29Z", "2008-02-07T23:04:51Z", "2008-02-07T23:04:55Z", "2008-02-06T23:09:41Z", "2008-02-06T23:09:56Z", "2008-02-04T00:36:14Z", "2008-02-04T00:36:23Z", "2008-02-05T13:17:28Z", "2008-02-05T13:17:39Z" ]
-            }
+            "timeAtPoint" : [ "2008-02-07T13:00:37Z", "2008-02-07T13:00:51Z", "2008-02-08T13:35:57Z", "2008-02-08T13:36:06Z", "2008-02-06T13:08:32Z", "2008-02-06T13:08:29Z", "2008-02-07T23:04:51Z", "2008-02-07T23:04:55Z", "2008-02-06T23:09:41Z", "2008-02-06T23:09:56Z", "2008-02-04T00:36:14Z", "2008-02-04T00:36:23Z", "2008-02-05T13:17:28Z", "2008-02-05T13:17:39Z" ]
         }
         </pre>
         <a href="http://localhost:9876/1.0/MovingFeatures?$select=timeAtPoint(POINT(116.4%2039.8))">timeAtPoint for all ID</a>
         <pre>
-        [
+        [ 
             {
                 "@id" : "mf0001",
-                "timeAtPoint" : {
-                  "dateTimes" : [ "2008-02-07T13:00:37Z", "2008-02-07T13:00:51Z", "2008-02-08T13:35:57Z", "2008-02-08T13:36:06Z", "2008-02-06T13:08:32Z", "2008-02-06T13:08:29Z", "2008-02-07T23:04:51Z", "2008-02-07T23:04:55Z", "2008-02-06T23:09:41Z", "2008-02-06T23:09:56Z", "2008-02-04T00:36:14Z", "2008-02-04T00:36:23Z", "2008-02-05T13:17:28Z", "2008-02-05T13:17:39Z" ]
-                }
-            }           
+                "timeAtPoint" : [ "2008-02-07T13:00:37Z", "2008-02-07T13:00:51Z", "2008-02-08T13:35:57Z", "2008-02-08T13:36:06Z", "2008-02-06T13:08:32Z", "2008-02-06T13:08:29Z", "2008-02-07T23:04:51Z", "2008-02-07T23:04:55Z", "2008-02-06T23:09:41Z", "2008-02-06T23:09:56Z", "2008-02-04T00:36:14Z", "2008-02-04T00:36:23Z", "2008-02-05T13:17:28Z", "2008-02-05T13:17:39Z" ]
+            } 
         ]
         </pre>
         <a href="http://localhost:9876/1.0/MovingFeatures?$select=velocity(2008-02-04T00:00:00Z)">Velocity for all ID</a>
@@ -74,29 +70,21 @@ and open the template in the editor.
         </pre>
         <a href="http://localhost:9876/1.0/MovingFeatures(mf0001)?$select=cummulativeDistanceAtTime(2008-02-03T23:30:30Z)">CummulativeDistanceAtTime with ID</a>
         <pre>
-        
         {
-            "cummulativeTimeAtDistance" : {
-                "distance" : 786.7345901618629
-            }
-        }
+            cummulativeDistanceAtTime: 786.7345901618629
+        }   
         </pre>
         <a href="http://localhost:9876/1.0/MovingFeatures?$select=cummulativeDistanceAtTime(2008-02-03T23:30:30Z)">CummulativeDistanceAtTime for all ID</a>
         <pre>
-       
-        [ 
+        [
             {
                 "@id" : "mf0001",
-                "cummulativeDistanceAtTime" : {
-                    "distance" : 786.7345901618629
-            }
+                "cummulativeDistanceAtTime" : 786.7345901618629
             }, 
             {
                 "@id" : "mf0002",
-                "cummulativeDistanceAtTime" : {
-                    "distance" : 885082.7485689921
-              }
-            } 
+                "cummulativeDistanceAtTime" : 885082.7485689921
+            }
         ]
         </pre>
         <a href="http://localhost:9876/1.0/MovingFeatures?$select=timeAtCummulativeDistance(1,%22km%22)">timeAtCummulativeDistance for all ID</a>
@@ -104,15 +92,11 @@ and open the template in the editor.
         [ 
             {
                 "@id" : "mf0001",
-                "timeAtCummulativeDistance" : {
-                    "dateTimes" : "2008-02-02T22:35:04Z"
-                }
+                "timeAtCummulativeDistance" : "2008-02-02T22:35:04Z"
             }, 
             {
                 "@id" : "mf0002",
-                "timeAtCummulativeDistance" : {
-                    "dateTimes" : "2008-02-02T22:34:12Z"
-                }
+                "timeAtCummulativeDistance" : "2008-02-02T22:34:12Z"
             } 
         ]
         </pre>
@@ -155,14 +139,13 @@ and open the template in the editor.
         <a href="http://localhost:9876/1.0/MovingFeatures(mf0001)?$filter=distanceWithIn(LINESTRING(1%202,3%204,5%206),2008-02-02T22:31:00Z,2008-02-02T22:40:00Z,10)">Filter operation with ID</a>
         <pre>
         {
-            "@id" : "mf0001",
-            "bool" : false
+            "distanceWithIn" : false
         }
         </pre>
         <a href="http://localhost:9876/1.0/MovingFeatures?$filter=disjoint(LINESTRING(1%202,3%204,5%206),2008-02-02T22:31:00Z,2008-02-02T22:40:00Z)">Filter opeation for all ID</a>
         <pre>
         {
-          "disjoint" : [ "mf0001", "mf0002" ]
+            "disjoint" : [ "mf0001", "mf0002" ]
         }
         </pre>
         <hr>
@@ -184,14 +167,16 @@ and open the template in the editor.
             {
                 "@id" : "mf0001",
                 "nearestApproachPoint" : {
-                    "name" : "nearestApproachPoint",
-                    "uom" : "km",
-                    "values" : [ [ 116.35089, 39.96329 ], [ 116.35814635910225, 39.962927182044886 ] ],
-                    "datetimes" : [ "2008-02-04T00:06:14Z", "2008-02-04T00:06:19Z" ]
+                    "type" : "MovingPoint",
+                    "datetimes" : [ "2008-02-04T00:06:14Z", "2008-02-04T00:06:19Z" ],
+                    "coordinates" : [ [ 116.35089, 39.96329 ], [ 116.35814635910225, 39.962927182044886 ] ],
+                    "interpolations" : "Linear"
                 }
             } 
         ]
         </pre>
+
+
         <a href="http://localhost:9876/1.0/MovingFeatures(mf0001)?$search=nearestApproach(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">nearest approach (distance) with ID</a>
         <pre>
         {
@@ -199,11 +184,12 @@ and open the template in the editor.
                 "name" : "distance",
                 "uom" : "m",
                 "values" : [ 0.007265423889165578, 0.007265423889165578 ],
-                "datetimes" : [ "2008-02-04T00:06:14Z", "2008-02-04T00:06:19Z" ]
+                "datetimes" : [ "2008-02-04T00:06:14Z", "2008-02-04T00:06:19Z" ],
+                "interpolations" : "Linear"
             }
         }
         </pre>
-        <a href="view-source:http://localhost:9876/1.0/MovingFeatures?$search=nearestApproach(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">earest approach (distance) for all ID</a>
+        <a href="http://localhost:9876/1.0/MovingFeatures?$search=nearestApproach(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">earest approach (distance) for all ID</a>
         <pre>
         [ 
             {
@@ -212,7 +198,8 @@ and open the template in the editor.
                     "name" : "distance",
                     "uom" : "m",
                     "values" : [ 0.007265423889165578, 0.007265423889165578 ],
-                    "datetimes" : [ "2008-02-04T00:06:14Z", "2008-02-04T00:06:19Z" ]
+                    "datetimes" : [ "2008-02-04T00:06:14Z", "2008-02-04T00:06:19Z" ],
+                    "interpolations" : "Linear"
                 }
             } 
         ]
