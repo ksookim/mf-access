@@ -6,13 +6,13 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Moving Featrures Access Examples</title>
+        <title>Moving Features Access Examples</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <h1>Select Examples</h1>
-        <a href="http://localhost:9876/1.0/MovingFeatures(mf0001)?$select=pointAtTime(2008-02-04T00:00:00Z)">pointAtTime with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$select=pointAtTime(2008-02-04T00:00:00Z)">pointAtTime with ID</a>
         <pre>
         {
             "pointAtTime" : {
@@ -21,7 +21,7 @@ and open the template in the editor.
             }
         }
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures?$select=pointAtTime(2008-02-04T00:00:00Z)">pointAtTime for All ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures?$select=pointAtTime(2008-02-04T00:00:00Z)">pointAtTime for All ID</a>
         <pre>
         [ 
             {
@@ -40,13 +40,13 @@ and open the template in the editor.
             } 
         ]
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures(mf0001)?$select=timeAtPoint(POINT(116.4%2039.8))">timeAtPoint with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$select=timeAtPoint(POINT(116.4%2039.8))">timeAtPoint with ID</a>
         <pre>
         {
             "timeAtPoint" : [ "2008-02-07T13:00:37Z", "2008-02-07T13:00:51Z", "2008-02-08T13:35:57Z", "2008-02-08T13:36:06Z", "2008-02-06T13:08:32Z", "2008-02-06T13:08:29Z", "2008-02-07T23:04:51Z", "2008-02-07T23:04:55Z", "2008-02-06T23:09:41Z", "2008-02-06T23:09:56Z", "2008-02-04T00:36:14Z", "2008-02-04T00:36:23Z", "2008-02-05T13:17:28Z", "2008-02-05T13:17:39Z" ]
         }
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures?$select=timeAtPoint(POINT(116.4%2039.8))">timeAtPoint for all ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures?$select=timeAtPoint(POINT(116.4%2039.8))">timeAtPoint for all ID</a>
         <pre>
         [ 
             {
@@ -55,7 +55,7 @@ and open the template in the editor.
             } 
         ]
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures?$select=velocity(2008-02-04T00:00:00Z)">Velocity for all ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures?$select=velocity(2008-02-04T00:00:00Z)">Velocity for all ID</a>
         <pre>
         [ 
             {
@@ -68,13 +68,13 @@ and open the template in the editor.
             } 
         ]
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures(mf0001)?$select=cummulativeDistanceAtTime(2008-02-03T23:30:30Z)">CummulativeDistanceAtTime with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$select=cummulativeDistanceAtTime(2008-02-03T23:30:30Z)">CummulativeDistanceAtTime with ID</a>
         <pre>
         {
             "cummulativeDistanceAtTime" : 786.7345901618629
         }   
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures?$select=cummulativeDistanceAtTime(2008-02-03T23:30:30Z)">CummulativeDistanceAtTime for all ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures?$select=cummulativeDistanceAtTime(2008-02-03T23:30:30Z)">CummulativeDistanceAtTime for all ID</a>
         <pre>
         [
             {
@@ -87,7 +87,7 @@ and open the template in the editor.
             }
         ]
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures?$select=timeAtCummulativeDistance(1,%22km%22)">timeAtCummulativeDistance for all ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures?$select=timeAtCummulativeDistance(1,%22km%22)">timeAtCummulativeDistance for all ID</a>
         <pre>
         [ 
             {
@@ -100,7 +100,7 @@ and open the template in the editor.
             } 
         ]
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures(mf0001)?$select=subTrajectory(2008-02-03T23:00:00Z,2008-02-03T23:05:00Z)">subTrajectory with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$select=subTrajectory(2008-02-03T23:00:00Z,2008-02-03T23:05:00Z)">subTrajectory with ID</a>
         <pre>
         {
             "subTrajectory" : {
@@ -111,7 +111,7 @@ and open the template in the editor.
             }
         }
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures?$select=subTrajectory(2008-02-03T23:00:00Z,2008-02-03T23:05:00Z)">subTrajectory for all ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures?$select=subTrajectory(2008-02-03T23:00:00Z,2008-02-03T23:05:00Z)">subTrajectory for all ID</a>
         <pre>
         [ 
             {
@@ -136,13 +136,13 @@ and open the template in the editor.
         </pre>
         <hr>
         <h1>Filter Examples</h1>
-        <a href="http://localhost:9876/1.0/MovingFeatures(mf0001)?$filter=distanceWithIn(LINESTRING(1%202,3%204,5%206),2008-02-02T22:31:00Z,2008-02-02T22:40:00Z,10)">Filter operation with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$filter=distanceWithIn(LINESTRING(1%202,3%204,5%206),2008-02-02T22:31:00Z,2008-02-02T22:40:00Z,10)">Filter operation with ID</a>
         <pre>
         {
             "distanceWithIn" : false
         }
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures?$filter=disjoint(LINESTRING(1%202,3%204,5%206),2008-02-02T22:31:00Z,2008-02-02T22:40:00Z)">Filter opeation for all ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures?$filter=disjoint(LINESTRING(1%202,3%204,5%206),2008-02-02T22:31:00Z,2008-02-02T22:40:00Z)">Filter opeation for all ID</a>
         <pre>
         {
             "disjoint" : [ "mf0001", "mf0002" ]
@@ -150,7 +150,7 @@ and open the template in the editor.
         </pre>
         <hr>
         <h1>Search Examples</h1>
-        <a href="http://localhost:9876/1.0/MovingFeatures(mf0001)?$search=nearestApproachPoint(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">Search nearest approach point with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$search=nearestApproachPoint(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">Search nearest approach point with ID</a>
         <pre>
         {
             "nearestApproachPoint" : {
@@ -161,7 +161,7 @@ and open the template in the editor.
             }
         }
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures?$search=nearestApproachPoint(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">Search nearest approach point with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures?$search=nearestApproachPoint(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">Search nearest approach point with ID</a>
         <pre>
         [ 
             {
@@ -177,7 +177,7 @@ and open the template in the editor.
         </pre>
 
 
-        <a href="http://localhost:9876/1.0/MovingFeatures(mf0001)?$search=nearestApproach(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">nearest approach (distance) with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$search=nearestApproach(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">nearest approach (distance) with ID</a>
         <pre>
         {
             "nearestApproach" : {
@@ -189,7 +189,7 @@ and open the template in the editor.
             }
         }
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures?$search=nearestApproach(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">earest approach (distance) for all ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures?$search=nearestApproach(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">Nearest approach (distance) for all ID</a>
         <pre>
         [ 
             {
