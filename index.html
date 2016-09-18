@@ -12,10 +12,10 @@ and open the template in the editor.
     </head>
     <body>
         <h1>Select Examples</h1>
-        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$select=pointAtTime(2008-02-04T00:00:00Z)">pointAtTime with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures('mf0001')?$select=pointAtTime(2008-02-04T00:00:00Z)">pointAtTime with ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures(mf0001)?$select=pointAtTime(2008-02-04T00:00:00Z)" readonly>
+            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures('mf0001')?$select=pointAtTime(2008-02-04T00:00:00Z)" readonly>
         </form>
         <pre>
         {
@@ -48,10 +48,10 @@ and open the template in the editor.
             } 
         ]
         </pre>
-        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$select=timeAtPoint(POINT(116.4%2039.8))">timeAtPoint with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures('mf0001')?$select=timeAtPoint(POINT(116.4%2039.8))">timeAtPoint with ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures(mf0001)?$select=timeAtPoint(POINT(116.4%2039.8))" readonly>
+            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures('mf0001')?$select=timeAtPoint(POINT(116.4%2039.8))" readonly>
         </form>
         <pre>
         {
@@ -88,10 +88,10 @@ and open the template in the editor.
             } 
         ]
         </pre>
-        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$select=cummulativeDistanceAtTime(2008-02-03T23:30:30Z)">CummulativeDistanceAtTime with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures('mf0001')?$select=cummulativeDistanceAtTime(2008-02-03T23:30:30Z)">CummulativeDistanceAtTime with ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures(mf0001)?$select=cummulativeDistanceAtTime(2008-02-03T23:30:30Z)" readonly>
+            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures('mf0001')?$select=cummulativeDistanceAtTime(2008-02-03T23:30:30Z)" readonly>
         </form>
         <pre>
         {
@@ -115,27 +115,20 @@ and open the template in the editor.
             }
         ]
         </pre>
-        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures?$select=timeAtCummulativeDistance(1,%22km%22)">timeAtCummulativeDistance for all ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures('mf0001')?$select=timeAtCummulativeDistance(1,%22km%22)">timeAtCummulativeDistance with ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures?$select=timeAtCummulativeDistance(1,%22km%22)" readonly>
+            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures('mf0001')?$select=timeAtCummulativeDistance(1,%22km%22)" readonly>
         </form>
         <pre>
-        [ 
-            {
-                "@id" : "mf0001",
-                "timeAtCummulativeDistance" : "2008-02-02T22:35:04Z"
-            }, 
-            {
-                "@id" : "mf0002",
-                "timeAtCummulativeDistance" : "2008-02-02T22:34:12Z"
-            } 
-        ]
+        {
+           "timeAtCummulativeDistance" : "2008-02-02T22:35:04Z
+        }
         </pre>
-        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$select=subTrajectory(2008-02-03T23:00:00Z,2008-02-03T23:05:00Z)">subTrajectory with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures('mf0001')?$select=subTrajectory(2008-02-03T23:00:00Z,2008-02-03T23:05:00Z)">subTrajectory with ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures(mf0001)?$select=subTrajectory(2008-02-03T23:00:00Z,2008-02-03T23:05:00Z)" readonly>
+            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures('mf0001')?$select=subTrajectory(2008-02-03T23:00:00Z,2008-02-03T23:05:00Z)" readonly>
         </form>
         <pre>
         {
@@ -176,10 +169,10 @@ and open the template in the editor.
         </pre>
         <hr>
         <h1>Filter Examples</h1>
-        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$filter=distanceWithIn(LINESTRING(1%202,3%204,5%206),2008-02-02T22:31:00Z,2008-02-02T22:40:00Z,10)">Filter operation with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures('mf0001')?$filter=distanceWithIn(LINESTRING(1%202,3%204,5%206),2008-02-02T22:31:00Z,2008-02-02T22:40:00Z,10)">Filter operation with ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures(mf0001)?$filter=distanceWithIn(LINESTRING(1%202,3%204,5%206),2008-02-02T22:31:00Z,2008-02-02T22:40:00Z,10)" readonly>
+            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures('mf0001')?$filter=distanceWithIn(LINESTRING(1%202,3%204,5%206),2008-02-02T22:31:00Z,2008-02-02T22:40:00Z,10)" readonly>
         </form>
         <pre>
         {
@@ -198,10 +191,10 @@ and open the template in the editor.
         </pre>
         <hr>
         <h1>Search Examples</h1>
-        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$search=nearestApproachPoint(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">Search nearest approach point with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures('mf0001')?$search=nearestApproachPoint(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">Search nearest approach point with ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures(mf0001)?$search=nearestApproachPoint(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)" readonly>
+            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures('mf0001')?$search=nearestApproachPoint(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)" readonly>
         </form>
         <pre>
         {
@@ -233,10 +226,10 @@ and open the template in the editor.
         </pre>
 
 
-        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures(mf0001)?$search=nearestApproach(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">nearest approach (distance) with ID</a>
+        <a href="http://ec2-54-238-193-146.ap-northeast-1.compute.amazonaws.com:9876/1.0/MovingFeatures('mf0001')?$search=nearestApproach(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)">nearest approach (distance) with ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures(mf0001)?$search=nearestApproach(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)" readonly>
+            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://mf-example.com:19876/1.0/MovingFeatures('mf0001')?$search=nearestApproach(LINESTRING(116.35%2039.8,116.36%2040),2008-02-04T00:00:00Z,2008-02-04T00:10:00Z)" readonly>
         </form>
         <pre>
         {
