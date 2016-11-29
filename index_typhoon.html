@@ -11,11 +11,12 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Select Examples</h1>
-        <a href="http://localhost:9876/1.0/MovingFeatures('1')?$select=pointAtTime(2016-07-03T06:00:00Z)">pointAtTime with ID</a>
+       <h1> Moving Features for Digital Typhoon Examples</h1>
+        <h2>Select Examples</h2>
+        <a href="http://52.198.116.39:9876/1.0/MovingFeatures('1')?$select=pointAtTime(2016-07-03T06:00:00Z)">pointAtTime with ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://localhost:9876/1.0/MovingFeatures('1')?$select=pointAtTime(2016-07-03T06:00:00Z)" readonly>
+            URL: <input type="text" name="pointAtTimeWithID" size="140" value="http://52.198.116.39:9876/1.0/MovingFeatures('1')?$select=pointAtTime(2016-07-03T06:00:00Z)" readonly>
         </form>
         <pre>
         {
@@ -25,10 +26,10 @@ and open the template in the editor.
             }
         }
         </pre>
-        <a href="http://localhost:9876/1.0/MovingFeatures?$select=pointAtTime(2016-07-23T06:00:00Z)">pointAtTime for All ID</a>
+        <a href="http://52.198.116.39:9876/1.0/MovingFeatures?$select=pointAtTime(2016-07-23T06:00:00Z)">pointAtTime for All ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="pointAtTimeAllID" size="140" value="http://localhost:9876/1.0/MovingFeatures?$select=pointAtTime(2016-07-23T06:00:00Z)" readonly>
+            URL: <input type="text" name="pointAtTimeAllID" size="140" value="http://52.198.116.39:9876/1.0/MovingFeatures?$select=pointAtTime(2016-07-23T06:00:00Z)" readonly>
         </form>
         <pre>
 	[ 
@@ -41,33 +42,33 @@ and open the template in the editor.
 		}
 	]
         </pre>
-       <h1>Filter Examples</h1>
-       <a href="http://localhost:9876/1.0/MovingFeatures('1')?$filter=intersects(LINESTRING(144.95 7,144.98 9),2016-07-03T06:00:00Z,2016-07-03T14:00:00Z)">intersects with ID</a>
+       <h2>Filter Examples</h2>
+       <a href="http://52.198.116.39:9876/1.0/MovingFeatures('1')?$filter=intersects(LINESTRING(144.95 7,144.98 9),2016-07-03T06:00:00Z,2016-07-03T14:00:00Z)">intersects with ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="intersectsWithID" size="140" value="http://localhost:9876/1.0/MovingFeatures('1')?$filter=intersects(LINESTRING(144.95 7,144.98 9),2016-07-03%2006:00:00,2016-07-03%2014:00:00)" readonly>
+            URL: <input type="text" name="intersectsWithID" size="140" value="http://52.198.116.39:9876/1.0/MovingFeatures('1')?$filter=intersects(LINESTRING(144.95 7,144.98 9),2016-07-03%2006:00:00,2016-07-03%2014:00:00)" readonly>
         </form>
         <pre>
         {
 		"intersects" : true
 	}
         </pre>
-       <a href="http://localhost:9876/1.0/MovingFeatures?$filter=intersects(LINESTRING(144.95 7,144.98 9),2016-07-03T06:00:00Z,2016-07-03T14:00:00Z)">intersects for All ID</a>
+       <a href="http://52.198.116.39:9876/1.0/MovingFeatures?$filter=intersects(LINESTRING(144.95 7,144.98 9),2016-07-03T06:00:00Z,2016-07-03T14:00:00Z)">intersects for All ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="intersectsAllID" size="140" value="http://localhost:9876/1.0/MovingFeatures?$filter=intersects(LINESTRING(144.95 7,144.98 9),2016-07-03T06:00:00Z,2016-07-03T14:00:00Z)" readonly>
+            URL: <input type="text" name="intersectsAllID" size="140" value="http://52.198.116.39:9876/1.0/MovingFeatures?$filter=intersects(LINESTRING(144.95 7,144.98 9),2016-07-03T06:00:00Z,2016-07-03T14:00:00Z)" readonly>
         </form>
         <pre>
         {
-		"intersects" : true
+		"intersects" : [ "1" ]
 	}
         </pre>
 
-       <h1>Search Examples</h1>
-       <a href="http://localhost:9876/1.0/MovingFeatures('3')?$search=buffer(5,3)">buffer with ID</a>
+       <h2>Search Examples</h2>
+       <a href="http://52.198.116.39:9876/1.0/MovingFeatures('3')?$search=buffer(5,3)">buffer with ID</a>
         <br><br>
         <form>
-            URL: <input type="text" name="intersectsWithID" size="140" value="http://localhost:9876/1.0/MovingFeatures('3')?$search=buffer(5,3)" readonly>
+            URL: <input type="text" name="intersectsWithID" size="140" value="http://52.198.116.39:9876/1.0/MovingFeatures('3')?$search=buffer(5,3)" readonly>
         </form>
         <pre>
         {
